@@ -1,7 +1,7 @@
 //%color=#444444 icon="\uf07b"
 namespace CS11 {
 	
-    //block="turn LED ON"
+    //%block="turn LED ON"
     export function turnLED()
     {
         writePin()
