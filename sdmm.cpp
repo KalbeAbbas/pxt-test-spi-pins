@@ -1,77 +1,100 @@
-/*#include "ff.h"
-#include "diskio.h"*/
+#include "ff.h"
+#include "diskio.h"
 
 #include "pxt.h"
 
-namespace sdmm{
 
-	void DO_INIT()
-	{
-	  /*MicroBitPin *pin = getPin(MISO);
-	  pin->setDigitalValue(0);*/
+/*
+	MISO = P14
+	MOSI = P15
+	SCK = P13
+	CS = P16
+*/
+
+
+void DO_INIT()
+{
 	  
-	  uBit.io.P13.setDigitalValue();
-	}
-
+	 uBit.io.P14.setDigitalValue(0);
 }
 
 
-/*bool DO()
+bool DO()
 {
-  MicroBitPin *pin = getPin(MISO);
-  return pin->getDigitalValue();
+  /*MicroBitPin *pin = getPin(MISO);
+  return pin->getDigitalValue();*/
+  
+  return uBit.io.P14.getDigitalValue();
 }
 
 void DI_INIT()
 {
-  MicroBitPin *pin = getPin(MOSI);
-  pin->setDigitalValue(0);
+  /*MicroBitPin *pin = getPin(MOSI);
+  pin->setDigitalValue(0);*/
+  
+  uBit.io.P15.setDigitalValue(0);
 }
 
 void DI_H()
 {
-  MicroBitPin *pin = getPin(MOSI);
-  pin->setDigitalValue(1);
+  /*MicroBitPin *pin = getPin(MOSI);
+  pin->setDigitalValue(1);*/
+  
+  uBit.io.P15.setDigitalValue(1);
 }
 void DI_L()
 {
-  MicroBitPin *pin = getPin((MOSI);
-  pin->setDigitalValue(0);
+  /*MicroBitPin *pin = getPin((MOSI);
+  pin->setDigitalValue(0);*/
+  
+  uBit.io.P15.setDigitalValue(0);
 }
 
 void CK_INIT()
 {
-  MicroBitPin *pin = getPin(SCK);
-  pin->setDigitalValue(0);
+  /*MicroBitPin *pin = getPin(SCK);
+  pin->setDigitalValue(0);*/
+  
+  uBit.io.P13.setDigitalValue(0);
 }
 void CK_H()
 {
-  MicroBitPin *pin = getPin(SCK);
-  pin->setDigitalValue(1);
+  /*MicroBitPin *pin = getPin(SCK);
+  pin->setDigitalValue(1);*/
+  
+  uBit.io.P13.setDigitalValue(1);
 }
 void CK_L()
 {
-  MicroBitPin *pin = getPin((SCK);
-  pin->setDigitalValue(0);
+  /*MicroBitPin *pin = getPin((SCK);
+  pin->setDigitalValue(0);*/
+  
+  uBit.io.P13.setDigitalValue(0);
 }
 
 void CS_INIT()
 {
-  MicroBitPin *pin = uBit.io.P16;
-  pin->setDigitalValue(0);
+  /*MicroBitPin *pin = uBit.io.P16;
+  pin->setDigitalValue(0);*/
+  
+  uBit.io.P16.setDigitalValue(0);
 }
 void CS_H()
 {
-  MicroBitPin *pin = uBit.io.P16;
-  pin->setDigitalValue(1);
+  /*MicroBitPin *pin = uBit.io.P16;
+  pin->setDigitalValue(1);*/
+  
+  uBit.io.P16.setDigitalValue(1);
 }
 void CS_L()
 {
-  MicroBitPin *pin = uBit.io.P16;
-  pin->setDigitalValue(0);
-}*/
+  /*MicroBitPin *pin = uBit.io.P16;
+  pin->setDigitalValue(0);*/
+  
+  uBit.io.P16.setDigitalValue(0);
+}
 
-/*void dly_us(UINT n)
+void dly_us(UINT n)
 {
   sleep_us(n);
 }
@@ -538,4 +561,4 @@ DRESULT disk_ioctl(
   deselect();
 
   return res;
-}*/
+}

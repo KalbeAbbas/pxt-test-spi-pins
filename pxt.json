@@ -8,18 +8,23 @@
     },
     "files": [
         "README.md",
+		"main.ts",
         "sdmm.cpp",
-        "cs11.ts"
+		"cs11.ts",
+		"cs11.cpp",
+		"diskio.h",
+		"ff.cpp",
+		"ff.h",
+		"ffconf.h"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": true,
     "supportedTargets": [
-        "maker",
-        "microbit"
+        "maker"
     ],
-    "preferredEditor": "tsprj",
+    "preferredEditor": "blocksprj",
     "authors": [
         "Luqmaan Baboo",
         "Bjarke Gotfredsen"
