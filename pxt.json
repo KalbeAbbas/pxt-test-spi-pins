@@ -1,6 +1,6 @@
 {
     "name": "CS11",
-    "version": "0.0.10",
+    "version": "0.0.8",
     "description": "XinaBox CS11 SD Card: SD Card functionality.",
     "license": "MIT",
     "dependencies": {
@@ -8,18 +8,23 @@
     },
     "files": [
         "README.md",
+		"main.ts",
         "sdmm.cpp",
-        "cs11.ts"
+		"cs11.ts",
+		"cs11.cpp",
+		"diskio.h",
+		"ff.cpp",
+		"ff.h",
+		"ffconf.h"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": true,
     "supportedTargets": [
-        "maker",
-        "microbit"
+        "maker"
     ],
-    "preferredEditor": "tsprj",
+    "preferredEditor": "blocksprj",
     "authors": [
         "Luqmaan Baboo",
         "Bjarke Gotfredsen"
