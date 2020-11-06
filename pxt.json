@@ -1,6 +1,6 @@
 {
     "name": "CS11",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "XinaBox CS11 SD Card: SD Card functionality.",
     "license": "MIT",
     "dependencies": {
