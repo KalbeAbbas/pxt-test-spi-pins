@@ -9,16 +9,17 @@
     "files": [
         "README.md",
         "sdmm.cpp",
-		"cs11.ts"
+        "cs11.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": true,
     "supportedTargets": [
-        "maker"
+        "maker",
+        "microbit"
     ],
-    "preferredEditor": "blocksprj",
+    "preferredEditor": "tsprj",
     "authors": [
         "Luqmaan Baboo",
         "Bjarke Gotfredsen"

@@ -10,7 +10,7 @@ namespace sdmm{
 	  /*MicroBitPin *pin = getPin(MISO);
 	  pin->setDigitalValue(0);*/
 	  
-	  uBit.io.P13.setDigitalValue(0);
+	  uBit.io.P13.setDigitalValue();
 	}
 
 }
