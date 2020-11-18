@@ -1,8 +1,9 @@
 let timer = control.millis()
 let str = ""
 
+basic.showNumber(0)
+
 basic.forever(function () {
-	str = "" + timer
-	CS11.appendFile("bye.txt", "Hello\n")
-	timer = control.millis()
+	CS11.appendFile("bye.txt", "Pakistan\n")
+	basic.showNumber(1)
 })

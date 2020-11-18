@@ -55,7 +55,10 @@ namespace CS11 {
             createFolder("CS11")
             sdFlag = true
         }
-        file(u, v, 0x02 | 0x30)
+        if(file(u, v, 0x02 | 0x30))
+		{
+			basic.showNumber(2)
+		}
         return
     }
 
